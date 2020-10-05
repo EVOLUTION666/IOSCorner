@@ -30,41 +30,21 @@
                             <outlet property="delegate" destination="eWf-zA-IzE" id="8qa-ff-F1v"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="vq9-P9-udx"/>
+                    <navigationItem key="navigationItem" id="vq9-P9-udx">
+                        <barButtonItem key="rightBarButtonItem" image="basket" id="iC8-dg-uEu">
+                            <connections>
+                                <action selector="busketAction:" destination="eWf-zA-IzE" id="Hbq-vp-VVL"/>
+                                <segue destination="5Mb-Ce-vE4" kind="presentation" id="a7I-15-f6F"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="busketBarButton" destination="iC8-dg-uEu" id="eZ9-Ww-JMM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XMI-aY-xyH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1171.0144927536232" y="209.59821428571428"/>
-        </scene>
-        <!--SecondVC-->
-        <scene sceneID="hQ0-2i-HMh">
-            <objects>
-                <viewController id="hcx-Cy-LW4" customClass="SecondVC" customModule="IOSCorner" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wph-cz-D8S">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Jf-mh-l8K">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="9Jf-mh-l8K" firstAttribute="top" secondItem="zcj-MC-iM3" secondAttribute="top" id="LBO-Eo-mDy"/>
-                            <constraint firstItem="zcj-MC-iM3" firstAttribute="bottom" secondItem="9Jf-mh-l8K" secondAttribute="bottom" id="Ppw-r1-6GS"/>
-                            <constraint firstItem="zcj-MC-iM3" firstAttribute="trailing" secondItem="9Jf-mh-l8K" secondAttribute="trailing" id="mF3-P7-vV2"/>
-                            <constraint firstItem="9Jf-mh-l8K" firstAttribute="leading" secondItem="zcj-MC-iM3" secondAttribute="leading" id="v2g-Ih-VMx"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="zcj-MC-iM3"/>
-                    </view>
-                    <connections>
-                        <outlet property="tableView" destination="9Jf-mh-l8K" id="9oh-Qr-Wkq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iFg-bT-wUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2071" y="210"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NyJ-sW-aJP">
@@ -84,5 +64,92 @@
             </objects>
             <point key="canvasLocation" x="260.86956521739131" y="209.59821428571428"/>
         </scene>
+        <!--Order View Controller-->
+        <scene sceneID="hB2-4c-3Ry">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="qkx-yf-WRT" customClass="OrderViewController" customModule="IOSCorner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m10-Dp-R6n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gWg-rY-alJ">
+                                <rect key="frame" x="20" y="88" width="374" height="660"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co6-sp-S1g">
+                                <rect key="frame" x="20" y="802" width="374" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0VN-5g-uVF"/>
+                                </constraints>
+                                <state key="normal" title="BUY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyAction:" destination="qkx-yf-WRT" eventType="touchUpInside" id="Lui-a0-MjM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvB-FN-CSB">
+                                <rect key="frame" x="247" y="764" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xt1-3l-Y7Q" firstAttribute="trailing" secondItem="gWg-rY-alJ" secondAttribute="trailing" constant="20" id="1S1-eL-cGe"/>
+                            <constraint firstItem="EvB-FN-CSB" firstAttribute="top" secondItem="gWg-rY-alJ" secondAttribute="bottom" constant="16" id="61Z-wf-JVH"/>
+                            <constraint firstItem="Xt1-3l-Y7Q" firstAttribute="trailing" secondItem="co6-sp-S1g" secondAttribute="trailing" constant="20" id="8GY-YK-tbr"/>
+                            <constraint firstItem="gWg-rY-alJ" firstAttribute="leading" secondItem="Xt1-3l-Y7Q" secondAttribute="leading" constant="20" id="Kg6-AN-7Nf"/>
+                            <constraint firstItem="EvB-FN-CSB" firstAttribute="leading" secondItem="Xt1-3l-Y7Q" secondAttribute="leading" constant="247" id="MHk-Hk-hj3"/>
+                            <constraint firstItem="co6-sp-S1g" firstAttribute="top" secondItem="EvB-FN-CSB" secondAttribute="bottom" constant="17" id="Qkp-n0-A0Q"/>
+                            <constraint firstItem="Xt1-3l-Y7Q" firstAttribute="trailing" secondItem="EvB-FN-CSB" secondAttribute="trailing" constant="20" id="YTF-2t-bJA"/>
+                            <constraint firstItem="Xt1-3l-Y7Q" firstAttribute="bottom" secondItem="co6-sp-S1g" secondAttribute="bottom" constant="30" id="pks-2O-KkX"/>
+                            <constraint firstItem="co6-sp-S1g" firstAttribute="leading" secondItem="Xt1-3l-Y7Q" secondAttribute="leading" constant="20" id="ptN-Iq-Lcu"/>
+                            <constraint firstItem="gWg-rY-alJ" firstAttribute="top" secondItem="Xt1-3l-Y7Q" secondAttribute="top" id="vI7-lx-0IM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xt1-3l-Y7Q"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pYJ-qg-fhc">
+                        <barButtonItem key="leftBarButtonItem" image="cancel" id="gZy-8r-4eu">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backToMenuAction:" destination="qkx-yf-WRT" id="pzC-Ck-xc9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buyButton" destination="co6-sp-S1g" id="3Xt-SB-lQ9"/>
+                        <outlet property="tableView" destination="gWg-rY-alJ" id="xgQ-2U-wL3"/>
+                        <outlet property="totalPrice" destination="EvB-FN-CSB" id="Of5-sD-K7v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="US8-MT-EDm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2962.3188405797105" y="-601.33928571428567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3ix-ne-jwR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="5Mb-Ce-vE4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z7T-IK-i4r">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qkx-yf-WRT" kind="relationship" relationship="rootViewController" id="Y2l-Ax-y1W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XqV-ZG-u93" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2075" y="-601"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="basket" width="26" height="26"/>
+        <image name="cancel" width="24" height="24"/>
+    </resources>
 </document>

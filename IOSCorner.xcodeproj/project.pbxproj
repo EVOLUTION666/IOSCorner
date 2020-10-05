@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550E5BA8251BDAC5005084D1 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550E5BA6251BDAC5005084D1 /* MenuItemCell.swift */; };
+		550E5BA9251BDAC5005084D1 /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550E5BA7251BDAC5005084D1 /* MenuItemCell.xib */; };
+		550E5BAB251BE35C005084D1 /* UIImageView + load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550E5BAA251BE35C005084D1 /* UIImageView + load.swift */; };
+		55A87739251D3FA100F1A035 /* IOSCorner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55A87737251D3FA000F1A035 /* IOSCorner.xcdatamodeld */; };
+		55A8773B251D43AF00F1A035 /* PersistingConteiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A8773A251D43AF00F1A035 /* PersistingConteiner.swift */; };
+		55A8773D251D43BC00F1A035 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A8773C251D43BC00F1A035 /* CoreDataManager.swift */; };
+		55A8773F251DE57300F1A035 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A8773E251DE57300F1A035 /* OrderViewController.swift */; };
+		55A877412522648E00F1A035 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A877402522648E00F1A035 /* OrderItem.swift */; };
 		55D77C7A25148D2900389BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D77C7925148D2900389BB6 /* AppDelegate.swift */; };
 		55D77C7C25148D2900389BB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D77C7B25148D2900389BB6 /* SceneDelegate.swift */; };
 		55D77C7E25148D2900389BB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D77C7D25148D2900389BB6 /* ViewController.swift */; };
@@ -14,9 +22,18 @@
 		55D77C8325148D2D00389BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55D77C8225148D2D00389BB6 /* Assets.xcassets */; };
 		55D77C8625148D2D00389BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55D77C8425148D2D00389BB6 /* LaunchScreen.storyboard */; };
 		55D77C8E25148DF900389BB6 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D77C8D25148DF900389BB6 /* Menu.swift */; };
+		55D77C922514E0C800389BB6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D77C912514E0C800389BB6 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		550E5BA6251BDAC5005084D1 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		550E5BA7251BDAC5005084D1 /* MenuItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuItemCell.xib; sourceTree = "<group>"; };
+		550E5BAA251BE35C005084D1 /* UIImageView + load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + load.swift"; sourceTree = "<group>"; };
+		55A87738251D3FA100F1A035 /* IOSCorner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IOSCorner.xcdatamodel; sourceTree = "<group>"; };
+		55A8773A251D43AF00F1A035 /* PersistingConteiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistingConteiner.swift; sourceTree = "<group>"; };
+		55A8773C251D43BC00F1A035 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		55A8773E251DE57300F1A035 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		55A877402522648E00F1A035 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		55D77C7625148D2900389BB6 /* IOSCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D77C7925148D2900389BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55D77C7B25148D2900389BB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +43,7 @@
 		55D77C8525148D2D00389BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55D77C8725148D2D00389BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55D77C8D25148DF900389BB6 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		55D77C912514E0C800389BB6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +79,17 @@
 				55D77C7925148D2900389BB6 /* AppDelegate.swift */,
 				55D77C7B25148D2900389BB6 /* SceneDelegate.swift */,
 				55D77C7D25148D2900389BB6 /* ViewController.swift */,
+				55A8773E251DE57300F1A035 /* OrderViewController.swift */,
+				55A8773A251D43AF00F1A035 /* PersistingConteiner.swift */,
+				55A8773C251D43BC00F1A035 /* CoreDataManager.swift */,
+				550E5BA6251BDAC5005084D1 /* MenuItemCell.swift */,
+				55A877402522648E00F1A035 /* OrderItem.swift */,
+				550E5BA7251BDAC5005084D1 /* MenuItemCell.xib */,
+				55D77C912514E0C800389BB6 /* NetworkManager.swift */,
+				550E5BAA251BE35C005084D1 /* UIImageView + load.swift */,
 				55D77C8D25148DF900389BB6 /* Menu.swift */,
 				55D77C7F25148D2900389BB6 /* Main.storyboard */,
+				55A87737251D3FA000F1A035 /* IOSCorner.xcdatamodeld */,
 				55D77C8225148D2D00389BB6 /* Assets.xcassets */,
 				55D77C8425148D2D00389BB6 /* LaunchScreen.storyboard */,
 				55D77C8725148D2D00389BB6 /* Info.plist */,
@@ -129,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55D77C8625148D2D00389BB6 /* LaunchScreen.storyboard in Resources */,
+				550E5BA9251BDAC5005084D1 /* MenuItemCell.xib in Resources */,
 				55D77C8325148D2D00389BB6 /* Assets.xcassets in Resources */,
 				55D77C8125148D2900389BB6 /* Main.storyboard in Resources */,
 			);
@@ -141,9 +169,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D77C922514E0C800389BB6 /* NetworkManager.swift in Sources */,
 				55D77C7E25148D2900389BB6 /* ViewController.swift in Sources */,
+				55A87739251D3FA100F1A035 /* IOSCorner.xcdatamodeld in Sources */,
 				55D77C7A25148D2900389BB6 /* AppDelegate.swift in Sources */,
+				550E5BAB251BE35C005084D1 /* UIImageView + load.swift in Sources */,
+				550E5BA8251BDAC5005084D1 /* MenuItemCell.swift in Sources */,
+				55A877412522648E00F1A035 /* OrderItem.swift in Sources */,
+				55A8773B251D43AF00F1A035 /* PersistingConteiner.swift in Sources */,
 				55D77C8E25148DF900389BB6 /* Menu.swift in Sources */,
+				55A8773D251D43BC00F1A035 /* CoreDataManager.swift in Sources */,
+				55A8773F251DE57300F1A035 /* OrderViewController.swift in Sources */,
 				55D77C7C25148D2900389BB6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +378,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		55A87737251D3FA000F1A035 /* IOSCorner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				55A87738251D3FA100F1A035 /* IOSCorner.xcdatamodel */,
+			);
+			currentVersion = 55A87738251D3FA100F1A035 /* IOSCorner.xcdatamodel */;
+			path = IOSCorner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 55D77C6E25148D2900389BB6 /* Project object */;
 }
