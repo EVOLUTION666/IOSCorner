@@ -32,6 +32,41 @@
                                     <constraint firstAttribute="width" constant="90" id="cwt-iu-Z1I"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="xIi-ec-Hcj">
+                                <rect key="frame" x="98" y="48" width="68" height="28"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygg-hX-0nq">
+                                        <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="58W-Yp-GSx"/>
+                                            <constraint firstAttribute="height" constant="28" id="j9r-KC-d4F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="minusCount:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aiY-5f-uai"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdq-on-z8g">
+                                        <rect key="frame" x="29" y="0.0" width="10" height="28"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpA-7c-qEA">
+                                        <rect key="frame" x="40" y="0.0" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="FRE-yJ-ECT"/>
+                                            <constraint firstAttribute="width" constant="28" id="yRZ-vI-s6Q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="plusCount:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="IPR-cv-6qG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rc8-si-yLd">
                                 <rect key="frame" x="98" y="1.5" width="176" height="81"/>
                                 <subviews>
@@ -74,12 +109,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="aTu-jp-gLa" firstAttribute="top" secondItem="k4X-WB-Q8j" secondAttribute="top" id="4fw-LR-ljv"/>
+                            <constraint firstAttribute="bottom" secondItem="xIi-ec-Hcj" secondAttribute="bottom" constant="8" id="5gU-Zk-sSp"/>
                             <constraint firstAttribute="bottom" secondItem="aTu-jp-gLa" secondAttribute="bottom" id="5oT-xU-jsC"/>
                             <constraint firstItem="Rc8-si-yLd" firstAttribute="centerY" secondItem="k4X-WB-Q8j" secondAttribute="centerY" id="G4E-M2-iX7"/>
                             <constraint firstItem="aTu-jp-gLa" firstAttribute="leading" secondItem="Rc8-si-yLd" secondAttribute="trailing" constant="8" id="Lt8-rX-krb"/>
                             <constraint firstAttribute="bottom" secondItem="ani-1D-i6q" secondAttribute="bottom" id="Wa9-De-1q9"/>
                             <constraint firstItem="ani-1D-i6q" firstAttribute="leading" secondItem="k4X-WB-Q8j" secondAttribute="leading" id="e5t-CH-lNE"/>
                             <constraint firstAttribute="trailing" secondItem="aTu-jp-gLa" secondAttribute="trailing" id="egk-yU-sO4"/>
+                            <constraint firstItem="xIi-ec-Hcj" firstAttribute="leading" secondItem="ani-1D-i6q" secondAttribute="trailing" constant="8" id="gZ7-rF-qYa"/>
                             <constraint firstItem="Rc8-si-yLd" firstAttribute="leading" secondItem="ani-1D-i6q" secondAttribute="trailing" constant="8" id="nOD-EC-aRH"/>
                             <constraint firstItem="ani-1D-i6q" firstAttribute="top" secondItem="k4X-WB-Q8j" secondAttribute="top" id="slS-2n-4Nm"/>
                         </constraints>
@@ -95,6 +132,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="addInBusket" destination="1do-dR-2Of" id="gMy-eX-mYd"/>
+                <outlet property="countLabel" destination="pdq-on-z8g" id="b1N-eN-HXu"/>
+                <outlet property="countStack" destination="xIi-ec-Hcj" id="XYx-rD-QiE"/>
                 <outlet property="descriptionLabel" destination="5Us-qx-T5D" id="dq4-hB-P0o"/>
                 <outlet property="itemImage" destination="ani-1D-i6q" id="WGP-Gi-umf"/>
                 <outlet property="itemView" destination="k4X-WB-Q8j" id="9KM-4j-YCT"/>

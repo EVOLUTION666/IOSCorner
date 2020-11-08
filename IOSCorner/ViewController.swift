@@ -59,6 +59,7 @@ class ViewController: UITableViewController {
         
         cell.setup(model: item)
         cell.delegate = self
+        cell.countStack.isHidden = true
         
         return cell
     }
@@ -73,9 +74,20 @@ class ViewController: UITableViewController {
 }
 
 extension ViewController: MenuItemCellDelegate {
-    func saveItem(by: Menu) {
-
-        CoreDataManager.shared.saveOrder(item: by)
+    func setNewCount(by: Menu) {
+        CoreDataManager.shared.getOrders { items in
+            guard let item = items.filter({$0.0.name == by.name}).first else {return}
+            CoreDataManager.shared.setNewCount(count: item.1 + 1, menu: item.0)
+        }
+    }
+    
+    func saveItem(by: Menu, count: Int) {
+        
+        CoreDataManager.shared.getOrders { items in
+            if !items.contains(where: {$0.0.name == by.name}) {
+                CoreDataManager.shared.saveOrder(item: by, count: count)
+            }
+        }
         
     }
     

@@ -45,8 +45,8 @@ class NetworkManager {
         }.resume()
     }
     
-    func order(_ eat: Menu, name: String, id: String) {
-        let order = OrderItem(positionName: eat.name, buyerName: name, idOrder: id)
+    func order(_ eat: Menu, name: String, id: String, count: Int) {
+        let order = OrderItem(positionName: eat.name, buyerName: name, idOrder: id, count: String(count))
         let url = URL(string: "http://localhost:8080/order")!
         
         let encoder = JSONEncoder()

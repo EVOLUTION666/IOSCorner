@@ -14,12 +14,12 @@ class OrderViewController: UIViewController {
     @IBOutlet var buyButton: UIButton!
     @IBOutlet var totalPrice: UILabel!
     
-    var orders = [Menu]() {
+    var orders = [(Menu, Int)]() {
         didSet {
             tableView.reloadData()
             var sum = 0
             for order in orders {
-                sum += order.price
+                sum += order.0.price
             }
             totalPrice.text = "Total: \(sum)$"
         }
@@ -65,7 +65,7 @@ class OrderViewController: UIViewController {
             guard let name = alertController.textFields?[0].text else { return }
             
             for order in self.orders {
-                NetworkManager.shared.order(order, name: name, id: String(self.id))
+                NetworkManager.shared.order(order.0, name: name, id: String(self.id), count: order.1)
             }
             self.orders.removeAll()
             CoreDataManager.shared.removeAll()
@@ -98,7 +98,7 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: MenuItemCell.reuseID, for: indexPath) as! MenuItemCell
         
         cell.addInBusket.isHidden = true
-        cell.setup(model: orders[indexPath.row])
+        cell.setup(model: orders[indexPath.row].0, count: orders[indexPath.row].1)
         return cell
     }
     
@@ -109,7 +109,7 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let model = orders[indexPath.row]
-            CoreDataManager.shared.removeOrder(item: model)
+            CoreDataManager.shared.removeOrder(item: model.0)
             orders.remove(at: indexPath.row)
         }
     }
