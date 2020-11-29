@@ -19,10 +19,11 @@ class OrderViewController: UIViewController {
             tableView.reloadData()
             var sum = 0
             for order in orders {
-                sum += order.0.price
+                sum += order.0.price * order.1
             }
             totalPrice.text = "Total: \(sum)$"
         }
+        
     }
     
     var id = 00
@@ -53,6 +54,15 @@ class OrderViewController: UIViewController {
         title = "Order"
     }
     
+    func showOrderNumber(orderNumber: Int) {
+        let alertController = UIAlertController(
+        title: "Your order number is",
+        message: String(orderNumber),
+        preferredStyle: .alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alertController, animated: true)
+    }
     
     @IBAction func buyAction(_ sender: Any) {
         
@@ -69,18 +79,32 @@ class OrderViewController: UIViewController {
             }
             self.orders.removeAll()
             CoreDataManager.shared.removeAll()
-            self.id += 1
+            self.showOrderNumber(orderNumber: self.id)
+            var newID = Int.random(in: 1...100)
+            if newID == self.id {
+                while newID != self.id {
+                    newID = Int.random(in: 1...100)
+                }
+            }
+            self.id = newID
             UserDefaults.standard.set(self.id, forKey: "id")
         }))
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         
         present(alertController, animated: true)
         
-        
     }
     
     @IBAction func backToMenuAction(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func setTotalLabel() {
+        var sum = 0
+        for order in orders {
+            sum += order.0.price * order.1
+        }
+        totalPrice.text = "Total: \(sum)$"
     }
     
 }
@@ -99,6 +123,7 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.addInBusket.isHidden = true
         cell.setup(model: orders[indexPath.row].0, count: orders[indexPath.row].1)
+        cell.delegate = self
         return cell
     }
     
@@ -114,4 +139,11 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+}
+
+extension OrderViewController: MenuItemCellDelegate {
+    func didChangePrice(cell: MenuItemCell, newCount: Int) {
+        guard let index = tableView.indexPath(for: cell) else {return}
+        orders[index.row].1 = newCount
+    }
 }

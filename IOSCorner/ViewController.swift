@@ -74,6 +74,10 @@ class ViewController: UITableViewController {
 }
 
 extension ViewController: MenuItemCellDelegate {
+    func didChangePrice() {
+        tableView.reloadData()
+    }
+    
     func setNewCount(by: Menu) {
         CoreDataManager.shared.getOrders { items in
             guard let item = items.filter({$0.0.name == by.name}).first else {return}

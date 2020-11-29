@@ -11,6 +11,13 @@ import UIKit
 protocol MenuItemCellDelegate {
     func saveItem(by: Menu, count: Int)
     func setNewCount(by: Menu)
+    func didChangePrice(cell: MenuItemCell, newCount: Int)
+}
+
+extension MenuItemCellDelegate {
+    func saveItem(by: Menu, count: Int) {}
+    func setNewCount(by: Menu) {}
+    func didChangePrice(cell: MenuItemCell, newCount: Int) {}
 }
 
 class MenuItemCell: UITableViewCell {
@@ -49,7 +56,7 @@ class MenuItemCell: UITableViewCell {
     func setup(model: Menu, count: Int? = nil) {
         nameLabel.text = model.name
         descriptionLabel.text = model.description
-        priceLabel.text = String(model.price) + "$"
+        priceLabel.text = String(model.price * (count ?? 1)) + "$"
         countLabel.text = count == nil ? "" : String(count!)
         self.count = count == nil ? 1 : count!
         if model.image != nil {
@@ -82,10 +89,14 @@ class MenuItemCell: UITableViewCell {
         guard let item = item, count > 1 else {return}
         count -= 1
         CoreDataManager.shared.setNewCount(count: count, menu: item)
+        priceLabel.text = String(item.price * count) + "$"
+        delegate?.didChangePrice(cell: self, newCount: count)
     }
     @IBAction func plusCount(_ sender: Any) {
         guard let item = item else {return}
         count += 1
         CoreDataManager.shared.setNewCount(count: count, menu: item)
+        priceLabel.text = String(item.price * count) + "$"
+        delegate?.didChangePrice(cell: self, newCount: count)
     }
 }

@@ -1,0 +1,19 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "2ad64129cdc2400c50cbfdc9900653ed"
+build_time: [1605449375, 516838000]
+inputs:
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/NetworkManager.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/ViewController.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/UIImageView + load.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderItem.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/PersistingConteiner.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/Menu.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/CoreDataManager.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/SceneDelegate.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/build/IOSCorner.build/Release-iphoneos/IOSCorner.build/DerivedSources/CoreDataGenerated/IOSCorner/Order+CoreDataClass.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/build/IOSCorner.build/Release-iphoneos/IOSCorner.build/DerivedSources/CoreDataGenerated/IOSCorner/Order+CoreDataProperties.swift": [9223372036, 854775807]
+  "/Users/andrey/Documents/Swift/IOSCorner/build/IOSCorner.build/Release-iphoneos/IOSCorner.build/DerivedSources/CoreDataGenerated/IOSCorner/IOSCorner+CoreDataModel.swift": [9223372036, 854775807]

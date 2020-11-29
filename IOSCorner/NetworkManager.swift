@@ -1,7 +1,13 @@
 import Foundation
 
+// MARK: - NetworkManager
+
 class NetworkManager {
+    
+    
     static let shared = NetworkManager()
+    
+    
     
     func fetchData(completion: @escaping ([Menu]) -> ())  {
         guard let url = URL(string: "http://localhost:8080/menu/get") else {
