@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 
+/// PersistentContainer simplifies the creation and management of the Core Data stack by handling the creation of the managed object model.
 class PersistingConteiner {
     static let shared = PersistingConteiner()
     

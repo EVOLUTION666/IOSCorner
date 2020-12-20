@@ -10,9 +10,12 @@ import UIKit
 import MapKit
 import CoreLocation
 
+/// This class is created for navigation page.
 class MapViewController: UIViewController {
     
+    /** This is IBOutlet for mapView*/
     @IBOutlet var mapView: MKMapView!
+    /** This is IBOutlet for GO button*/
     @IBOutlet var goButton: UIButton!
     
     let eatCornerAddress = "Шухова, 21"
@@ -30,6 +33,7 @@ class MapViewController: UIViewController {
         
     }
     
+    /** Call this function for setup place mark. */
     private func setupPlaceMark() {
         let geocoder = CLGeocoder()
         geocoder.geocodeAddressString(eatCornerAddress) { (placemarks, error) in
@@ -56,7 +60,8 @@ class MapViewController: UIViewController {
         }
     }
     
-    // Проверка включенных служб локации на устройстве
+    
+    /** Call this function to Check the enabled location services on the device.*/
     private func checkLocationServices() {
         if CLLocationManager.locationServicesEnabled() {
             setupLocationManager()
@@ -69,12 +74,13 @@ class MapViewController: UIViewController {
         }
     }
     
-    // Первоначальная настройка locationManager
+    /** Call this function to initially configure LocationManager.*/
     private func setupLocationManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     }
     
+    /** Call this function for checking Location Authorization.*/
     private func checkLocationAuthorization() {
         switch CLLocationManager.authorizationStatus() {
         case .authorizedWhenInUse:
@@ -100,6 +106,7 @@ class MapViewController: UIViewController {
         }
     }
     
+    /** Call this function for get direction.*/
     private func getDirections() {
         
         guard let location = locationManager.location?.coordinate else {
@@ -138,6 +145,7 @@ class MapViewController: UIViewController {
         
     }
     
+    /** Call this function for creating direction requests.*/
     private func createDirectionRequest(from coordinate: CLLocationCoordinate2D) -> MKDirections.Request? {
         guard let destinationCoordinate = placeCoordinate else {
             return nil
@@ -154,6 +162,7 @@ class MapViewController: UIViewController {
         return request
     }
     
+    /** Call this function for showing alerts.*/
     private func showAlert(title: String, message: String) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -164,7 +173,7 @@ class MapViewController: UIViewController {
         
     }
     
-
+    /** Call this function for view center user location.*/
     @IBAction func centerViewInUserLocation() {
         if let location = locationManager.location?.coordinate {
             let region = MKCoordinateRegion(
@@ -175,11 +184,12 @@ class MapViewController: UIViewController {
         }
     }
     
+    /** Call this function when pressed GO button.*/
     @IBAction func goButtonPressed() {
         getDirections()
     }
     
-    
+    /** Call this function when pressed CLOSE button.*/
     @IBAction func closeVC() {
         dismiss(animated: true)
     }

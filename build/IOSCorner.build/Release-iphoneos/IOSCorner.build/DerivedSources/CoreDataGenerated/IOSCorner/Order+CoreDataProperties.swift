@@ -2,7 +2,7 @@
 //  Order+CoreDataProperties.swift
 //  
 //
-//  Created by Andrey on 15.11.2020.
+//  Created by Andrey on 15.12.2020.
 //
 //  This file was automatically generated and should not be edited.
 //

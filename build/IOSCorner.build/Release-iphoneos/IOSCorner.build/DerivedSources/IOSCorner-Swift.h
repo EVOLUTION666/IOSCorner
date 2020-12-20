@@ -227,13 +227,19 @@ SWIFT_CLASS("_TtC9IOSCorner11AppDelegate")
 @class NSBundle;
 @class NSCoder;
 
+/// This class is created for navigation page.
 SWIFT_CLASS("_TtC9IOSCorner17MapViewController")
 @interface MapViewController : UIViewController
+/// This is IBOutlet for mapView
 @property (nonatomic, strong) IBOutlet MKMapView * _Null_unspecified mapView;
+/// This is IBOutlet for GO button
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified goButton;
 - (void)viewDidLoad;
+/// Call this function for view center user location.
 - (IBAction)centerViewInUserLocation;
+/// Call this function when pressed GO button.
 - (IBAction)goButtonPressed;
+/// Call this function when pressed CLOSE button.
 - (IBAction)closeVC;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -260,22 +266,35 @@ SWIFT_CLASS("_TtC9IOSCorner17MapViewController")
 @class UIView;
 @class UIStackView;
 
+/// This class is created for the setting the menu cell.
 SWIFT_CLASS("_TtC9IOSCorner12MenuItemCell")
 @interface MenuItemCell : UITableViewCell
+/// This is IBOutlet for item image button
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified itemImage;
+/// This is IBOutlet for name of food
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified nameLabel;
+/// This is IBOutlet for food description
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified descriptionLabel;
+/// This is IBOutlet for price of food
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified priceLabel;
+/// This is IBOutlet for View
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified itemView;
+/// This is IBOutlet for ADD button
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified addInBusket;
+/// This is IBOutlet for right side view slide
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified rightSideView;
+/// This is IBOutlet for count stack
 @property (nonatomic, strong) IBOutlet UIStackView * _Null_unspecified countStack;
+/// This is IBOutlet for count label
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified countLabel;
 - (void)awakeFromNib;
 - (void)prepareForReuse;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+/// Call this function when pressed buy button on the cell
 - (IBAction)buyItem:(id _Nonnull)sender;
+/// Call this function when pressed “-” button
 - (IBAction)minusCount:(id _Nonnull)sender;
+/// Call this function when pressed “+” button
 - (IBAction)plusCount:(id _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -302,17 +321,25 @@ SWIFT_CLASS_NAMED("Order")
 
 @class UITableView;
 
+/// This class is created for Busket page
 SWIFT_CLASS("_TtC9IOSCorner19OrderViewController")
 @interface OrderViewController : UIViewController
+/// This is IBOutlet for tableView
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tableView;
+/// This is IBOutlet for buy button
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified buyButton;
+/// This is IBOutlet for total price label
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified totalPrice;
 - (void)viewDidLoad;
+/// Call this function to buy. Called when the buy button is pressed.
 - (IBAction)buyAction:(id _Nonnull)sender;
+/// Call this function to return the user to the menu
 - (IBAction)backToMenuAction:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 @interface OrderViewController (SWIFT_EXTENSION(IOSCorner)) <UITableViewDataSource, UITableViewDelegate>

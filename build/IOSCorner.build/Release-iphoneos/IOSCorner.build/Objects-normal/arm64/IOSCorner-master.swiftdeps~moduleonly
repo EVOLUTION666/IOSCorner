@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "2ad64129cdc2400c50cbfdc9900653ed"
-build_time: [1605449375, 516838000]
+build_time: [1608063702, 805439000]
 inputs:
   "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/NetworkManager.swift": [9223372036, 854775807]
   "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/ViewController.swift": [9223372036, 854775807]

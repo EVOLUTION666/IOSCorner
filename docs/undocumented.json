@@ -30,217 +30,119 @@
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/CoreDataManager.swift",
-      "line": 12,
-      "symbol": "CoreDataManager",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/CoreDataManager.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "CoreDataManager.shared",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/CoreDataManager.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "CoreDataManager.getOrders(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/CoreDataManager.swift",
-      "line": 34,
-      "symbol": "CoreDataManager.saveOrder(item:count:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/CoreDataManager.swift",
-      "line": 53,
-      "symbol": "CoreDataManager.removeOrder(item:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/CoreDataManager.swift",
-      "line": 70,
-      "symbol": "CoreDataManager.removeAll()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/CoreDataManager.swift",
-      "line": 88,
-      "symbol": "CoreDataManager.setNewCount(count:menu:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 13,
-      "symbol": "MapViewController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 15,
-      "symbol": "MapViewController.mapView",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 16,
-      "symbol": "MapViewController.goButton",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 18,
+      "line": 21,
       "symbol": "MapViewController.eatCornerAddress",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 19,
+      "line": 22,
       "symbol": "MapViewController.annotationIdentifier",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 20,
+      "line": 23,
       "symbol": "MapViewController.locationManager",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 21,
+      "line": 24,
       "symbol": "MapViewController.regionInMeters",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 22,
+      "line": 25,
       "symbol": "MapViewController.placeCoordinate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 25,
+      "line": 28,
       "symbol": "MapViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 168,
-      "symbol": "MapViewController.centerViewInUserLocation()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 178,
-      "symbol": "MapViewController.goButtonPressed()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 183,
-      "symbol": "MapViewController.closeVC()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 190,
-      "symbol": "MapViewController",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 192,
+      "line": 202,
       "symbol": "MapViewController.mapView(_:viewFor:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 211,
+      "line": 221,
       "symbol": "MapViewController.mapView(_:rendererFor:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 220,
-      "symbol": "MapViewController",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MapViewController.swift",
-      "line": 221,
+      "line": 231,
       "symbol": "MapViewController.locationManager(_:didChangeAuthorization:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/Menu.swift",
-      "line": 11,
-      "symbol": "Menu",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/Menu.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "Menu.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/Menu.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "Menu.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/Menu.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "Menu.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/Menu.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "Menu.price",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/Menu.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "Menu.image",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/Menu.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "Menu.imageData",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -268,350 +170,210 @@
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 16,
-      "symbol": "MenuItemCell",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "line": 14,
+      "symbol": "MenuItemCellDelegate.didChangePrice(cell:newCount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
+      "line": 17,
+      "symbol": "MenuItemCellDelegate",
+      "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
       "line": 18,
+      "symbol": "MenuItemCellDelegate.saveItem(by:count:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
+      "line": 19,
+      "symbol": "MenuItemCellDelegate.setNewCount(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
+      "line": 20,
+      "symbol": "MenuItemCellDelegate.didChangePrice(cell:newCount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
+      "line": 26,
       "symbol": "MenuItemCell.count",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 24,
-      "symbol": "MenuItemCell.itemImage",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 25,
-      "symbol": "MenuItemCell.nameLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 26,
-      "symbol": "MenuItemCell.descriptionLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 27,
-      "symbol": "MenuItemCell.priceLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 28,
-      "symbol": "MenuItemCell.itemView",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 29,
-      "symbol": "MenuItemCell.addInBusket",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 30,
-      "symbol": "MenuItemCell.rightSideView",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 31,
-      "symbol": "MenuItemCell.countStack",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 32,
-      "symbol": "MenuItemCell.countLabel",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 34,
+      "line": 51,
       "symbol": "MenuItemCell.item",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 35,
+      "line": 52,
       "symbol": "MenuItemCell.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 37,
+      "line": 54,
       "symbol": "MenuItemCell.reuseID",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 39,
+      "line": 56,
       "symbol": "MenuItemCell.awakeFromNib()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 49,
-      "symbol": "MenuItemCell.setup(model:count:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 63,
+      "line": 86,
       "symbol": "MenuItemCell.prepareForReuse()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 68,
+      "line": 91,
       "symbol": "MenuItemCell.setSelected(_:animated:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 74,
-      "symbol": "MenuItemCell.buyItem(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 81,
-      "symbol": "MenuItemCell.minusCount(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/MenuItemCell.swift",
-      "line": 86,
-      "symbol": "MenuItemCell.plusCount(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/NetworkManager.swift",
-      "line": 5,
-      "symbol": "NetworkManager",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/NetworkManager.swift",
-      "line": 8,
+      "line": 9,
       "symbol": "NetworkManager.shared",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/NetworkManager.swift",
-      "line": 12,
+      "line": 11,
       "symbol": "NetworkManager.fetchData(completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/NetworkManager.swift",
-      "line": 36,
-      "symbol": "NetworkManager.downloadImage(url:completion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/NetworkManager.swift",
-      "line": 54,
-      "symbol": "NetworkManager.order(_:name:id:count:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderItem.swift",
-      "line": 3,
-      "symbol": "OrderItem",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderItem.swift",
-      "line": 4,
+      "line": 5,
       "symbol": "OrderItem.positionName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderItem.swift",
-      "line": 5,
+      "line": 6,
       "symbol": "OrderItem.buyerName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderItem.swift",
-      "line": 6,
+      "line": 7,
       "symbol": "OrderItem.idOrder",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderItem.swift",
-      "line": 7,
+      "line": 8,
       "symbol": "OrderItem.count",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 11,
-      "symbol": "OrderViewController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 13,
-      "symbol": "OrderViewController.tableView",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 14,
-      "symbol": "OrderViewController.buyButton",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 15,
-      "symbol": "OrderViewController.totalPrice",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 17,
+      "line": 20,
       "symbol": "OrderViewController.orders",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 28,
+      "line": 32,
       "symbol": "OrderViewController.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 30,
+      "line": 34,
       "symbol": "OrderViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 57,
-      "symbol": "OrderViewController.buyAction(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 82,
-      "symbol": "OrderViewController.backToMenuAction(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 87,
-      "symbol": "OrderViewController",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 89,
+      "line": 119,
       "symbol": "OrderViewController.tableView(_:canEditRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 93,
+      "line": 123,
       "symbol": "OrderViewController.tableView(_:numberOfRowsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 97,
+      "line": 127,
       "symbol": "OrderViewController.tableView(_:cellForRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 105,
+      "line": 136,
       "symbol": "OrderViewController.tableView(_:heightForRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
-      "line": 109,
+      "line": 140,
       "symbol": "OrderViewController.tableView(_:commit:forRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/PersistingConteiner.swift",
-      "line": 12,
-      "symbol": "PersistingConteiner",
-      "symbol_kind": "source.lang.swift.decl.class",
+      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/OrderViewController.swift",
+      "line": 151,
+      "symbol": "OrderViewController.didChangePrice(cell:newCount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/PersistingConteiner.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "PersistingConteiner.shared",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/PersistingConteiner.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "PersistingConteiner.persistntContainer",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/PersistingConteiner.swift",
-      "line": 26,
+      "line": 27,
       "symbol": "PersistingConteiner.saveContext()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -759,13 +521,20 @@
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/ViewController.swift",
       "line": 77,
+      "symbol": "ViewController.didChangePrice()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/ViewController.swift",
+      "line": 81,
       "symbol": "ViewController.setNewCount(by:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/andrey/Documents/Swift/IOSCorner/IOSCorner/ViewController.swift",
-      "line": 84,
+      "line": 88,
       "symbol": "ViewController.saveItem(by:count:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

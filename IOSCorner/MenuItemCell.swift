@@ -20,6 +20,7 @@ extension MenuItemCellDelegate {
     func didChangePrice(cell: MenuItemCell, newCount: Int) {}
 }
 
+/// This class is created for the setting the menu cell.
 class MenuItemCell: UITableViewCell {
     
     var count: Int = 1 {
@@ -28,14 +29,23 @@ class MenuItemCell: UITableViewCell {
         }
     }
     
+    /** This is IBOutlet for item image button*/
     @IBOutlet var itemImage: UIImageView!
+    /** This is IBOutlet for name of food*/
     @IBOutlet var nameLabel: UILabel!
+    /** This is IBOutlet for food description*/
     @IBOutlet var descriptionLabel: UILabel!
+    /** This is IBOutlet for price of food*/
     @IBOutlet var priceLabel: UILabel!
+    /** This is IBOutlet for View*/
     @IBOutlet var itemView: UIView!
+    /** This is IBOutlet for ADD button*/
     @IBOutlet var addInBusket: UIButton!
+    /** This is IBOutlet for right side view slide*/
     @IBOutlet var rightSideView: UIView!
+    /** This is IBOutlet for count stack*/
     @IBOutlet var countStack: UIStackView!
+    /** This is IBOutlet for count label*/
     @IBOutlet var countLabel: UILabel!
     
     var item: Menu?
@@ -53,6 +63,12 @@ class MenuItemCell: UITableViewCell {
         
     }
     
+    /**
+     Call this function for setup the cell.
+     - Parameters:
+        - model : This is menu model
+        - count: This is count
+     */
     func setup(model: Menu, count: Int? = nil) {
         nameLabel.text = model.name
         descriptionLabel.text = model.description
@@ -78,6 +94,7 @@ class MenuItemCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    /** Call this function when pressed buy button on the cell*/
     @IBAction func buyItem(_ sender: Any) {
         guard let item = item, let delegate = delegate else {
             return
@@ -85,6 +102,8 @@ class MenuItemCell: UITableViewCell {
         delegate.saveItem(by: item, count: count)
         delegate.setNewCount(by: item)
     }
+    
+    /** Call this function when pressed "-" button*/
     @IBAction func minusCount(_ sender: Any) {
         guard let item = item, count > 1 else {return}
         count -= 1
@@ -92,6 +111,8 @@ class MenuItemCell: UITableViewCell {
         priceLabel.text = String(item.price * count) + "$"
         delegate?.didChangePrice(cell: self, newCount: count)
     }
+    
+    /** Call this function when pressed "+" button*/
     @IBAction func plusCount(_ sender: Any) {
         guard let item = item else {return}
         count += 1

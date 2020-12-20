@@ -7,15 +7,21 @@
 //
 
 import UIKit
-
+/// This class is created for Busket page
 class OrderViewController: UIViewController {
 
+    /** This is IBOutlet for tableView*/
     @IBOutlet var tableView: UITableView!
+    /** This is IBOutlet for buy button*/
     @IBOutlet var buyButton: UIButton!
+    /** This is IBOutlet for total price label*/
     @IBOutlet var totalPrice: UILabel!
     
     var orders = [(Menu, Int)]() {
         didSet {
+            if orders.isEmpty {
+                buyButton.isEnabled = false
+            }
             tableView.reloadData()
             var sum = 0
             for order in orders {
@@ -54,6 +60,7 @@ class OrderViewController: UIViewController {
         title = "Order"
     }
     
+    /** Call this function for showing alert with ORDER number. */
     func showOrderNumber(orderNumber: Int) {
         let alertController = UIAlertController(
         title: "Your order number is",
@@ -64,6 +71,7 @@ class OrderViewController: UIViewController {
         present(alertController, animated: true)
     }
     
+    /** Call this function to buy. Called when the buy button is pressed. */
     @IBAction func buyAction(_ sender: Any) {
         
         let alertController = UIAlertController(
@@ -94,11 +102,12 @@ class OrderViewController: UIViewController {
         present(alertController, animated: true)
         
     }
-    
+    /** Call this function to return the user to the menu*/
     @IBAction func backToMenuAction(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
+    /** Call this function to set the total count label*/
     func setTotalLabel() {
         var sum = 0
         for order in orders {

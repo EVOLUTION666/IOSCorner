@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 
+/// This class is created for CoreData Manager
 class CoreDataManager {
     static let shared = CoreDataManager()
     private let context = PersistingConteiner.shared.persistntContainer.viewContext
@@ -30,7 +31,7 @@ class CoreDataManager {
         }
     }
     
-    
+    /** Call this function for the save order*/
     func saveOrder(item: Menu, count: Int) {
         guard let url = URL(string: item.image ?? "") else {
             return
@@ -50,6 +51,7 @@ class CoreDataManager {
         
     }
     
+    /** Call this function for the delete.*/
     func removeOrder(item: Menu) {
         let fetch: NSFetchRequest<Order> = Order.fetchRequest()
         fetch.predicate = NSPredicate(format: "namePosition = '\(item.name)'")
@@ -67,6 +69,7 @@ class CoreDataManager {
         }
     }
     
+    /** Call this function for the remove ALL.*/
     func removeAll() {
         let fetch: NSFetchRequest<Order> = Order.fetchRequest()
         do {
@@ -85,6 +88,7 @@ class CoreDataManager {
         }
     }
     
+    /** Call this function for the set new count.*/
     func setNewCount(count: Int, menu: Menu) {
         let fetch: NSFetchRequest<Order> = Order.fetchRequest()
         fetch.predicate = NSPredicate(format: "namePosition = '\(menu.name)'")

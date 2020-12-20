@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// Structure for Menu model.
 struct Menu: Codable {
     var id: String
     var name: String
